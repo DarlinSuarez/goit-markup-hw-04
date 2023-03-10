@@ -1,212 +1,551 @@
-:root{
-    --color1:#2196F3; 
-    --color2:#212121;
-    --color3:#757575;
-    --color4:#2F303A;
-    --color5:#FFFFFF;
-    --color6: rgba(255, 255, 255, 0.6);}
-
-/*----------fuente body---------*/
-body {
-    font-family: 'Roboto', sans-serif;
+:root {
+   --color1: #2196F3;
+   --color2: #212121;
+   --color3: #757575;
+   --color4: #2F303A;
+   --color5: #FFFFFF;
+   --color6: rgba(255, 255, 255, 0.6);
 }
-    /*---------logo---------*/
-   .logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px; font-weight: 700; color:var(--color1); text-decoration: none; }
 
-ul, h1, h2, h3, h4, h5, h6 {
+/*-------------------------------------------------Fuente Body--------------------------------------*/
+
+body {
+   font-family:
+      'Roboto', sans-serif;
+}
+
+/*--------------------------------------------------logo----------------------------------------------*/
+.logo {
+   font-family: 'Raleway', sans-serif;
+   font-size: 26px;
+   font-weight: 700;
+   color: var(--color1);
+   text-decoration: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+a {
+   color: currentColor;
+   text-decoration: none;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/*----------------------------------------------Enlacees de navegacion---------------------------------------*/
+.navegation {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--color2);
+}
+
+.navegation :hover {
+   color: var(--color1);
+}
+
+.active {
+   color: #2196F3;
+}
+
+/*-----------------------------------------------contact-----------------------------------------------------*/
+.contact-section>.email>* {
+   color: var(--color3);
+   font-weight: 500;
+   font-size: 14px;
+
+   line-height: 1.14;
+   text-decoration: none;
+}
+
+.contact-section :hover {
+   color: var(--color4);
+}
+
+.contact-section {
    list-style: none;
 }
 
-.container {width: 1200px; margin: 0 auto;}
+/*-------------------------------------------------titulo----------------------------------------------------*/
+.titulo {
+   background-color: var(--color4);
 
-a {
-   color:currentColor; text-decoration: none;
-   }
-   *{box-sizing: border-box;}
-
-/*----------Enlacees de navegacion---------*/
- .navegation {font-weight: 500; font-size: 14px; line-height: 1.14; color: var(--color2); }
-
-.navegation :hover {color: var(--color1);}
-.active{color:#2196F3;}
-/*------------------contact---------------------*/
-.contact-section > .email > *{
-color:var(--color3); font-weight: 500; font-size: 14px; line-height: 1.14; text-decoration: none;
+   background-image: linear-gradient(to bottom, #2F303A66, #2F303A66), url(../images/Imagen-fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
-   .contact-section > .tel > *{
-    color:var(--color3); font-weight: 500; font-size: 14px; line-height: 1.14; text-decoration: none;
-   }
-   .contact-section :hover{
-    color: var(--color4);
-   }
-   .contact-section :active{
-    color: rgb(240, 154, 123);
-   }
-   .contact-section {list-style: none;}
-/*-----------------------titulo------------------------*/
-   .titulo {
-    background-color: var(--color4);opacity:0.7;background-image: url(../images/Imagen-fondo.jpg);background-repeat: no-repeat;background-size: cover;
-      }
-      .h1 {
-        color: var(--color5); font-size: 44px; font-weight: 900; text-align: center; line-height: 1.36;
-          }
 
-   .boton1{
-        font-weight: 700; font-size: 16px;  color:var(--color5);  background-color: var(--color1); line-height: 1.87; font-family: 'Roboto', sans-serif;
-     }
-     .titulo :hover{
-        background-color: var(--color4)
-        ;
-     }
-     .titulo :active{
-        background-color: var(--color1);
-     }
-
-     .ventajas h3 {
-        color:var(--color2); font-size: 14px; font-weight: 700; line-height: 1.14;
-     }
-     .ventajas p {
-        font-weight: 400; font-size: 14px; color:var(--color3); line-height: 1.71;
-     }
-     .ventajas h3 {
-        list-style: none;
-     }
-
-    
-   /*-----------------------A que nos dedicamos------------------*/
-   .dedicamos h2{
-      color:var(--color2); font-size: 36px; font-weight: 700; line-height: 1.16;
-   }
-   .imagen {list-style: none;}
-
-   /*------------------Nuetro equipo-------------------------*/
-   .equipo{background: #F5F4FA;}
-   .equipo h2{
-      color:var(--color2); font-size: 36px; font-weight: 700; line-height: 1.16;
-   }
-        
-   .asesores h3 {color:var(--color2); font-size: 16px; line-height: 1.18; font-weight: 500; background-color: #FFFFFF;}
-   .asesores p {color:var(--color3);font-size: 16px; line-height: 1.18; font-weight: 400;}
-   
-
-   /*-------------------------pie de pagina--------------------*/
-  .final {background-color: var(--color4);}
-  .contacto .ubicacion{
-   color:var(--color5); font-size: 14px; font-weight: 400; text-decoration: none; line-height: 1.71;
-  }
-.contacto .correo{
-   color:var(--color6); font-size: 14px; font-weight: 400; text-decoration: none; line-height: 1.71;
+.h1 {
+   color: var(--color5);
+   font-size: 44px;
+   font-weight: 900;
+   text-align: center;
+   line-height: 1.36;
 }
-.contacto .telefono{
-   color:var(--color6); font-size: 14px; font-weight: 400; text-decoration: none; line-height: 1.71;
+
+.boton1 {
+   font-weight: 700;
+   font-size: 16px;
+   color: var(--color5);
+   background-color: var(--color1);
+   line-height: 1.87;
+   font-family: 'Roboto', sans-serif;
+   cursor: pointer
 }
-/*-------------------
-  
- /*-----------------------------portafolio botones---------------------------*/
- .menu {
-   font-size: 16px; font-weight: 500; line-height: 1.62; color: var(--color5);
- }
-   .proyect h3{color: var(--color2); font-size: 18px; font-weight: 700; line-height: 2;
 
-   }
-   .menu p{
-      font-size: 16; font-weight: 400; line-height: 1.87; color: var(--color3);
-   }
-   .menu :hover{color:var(--color3)}
-   .cards :hover{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+.ventajas {
+   padding: 94px;
+}
 
-   
-/*-------------flex box index html----------------------------------*/
-.header-nav{display: flex; justify-content: center; align-items: center;height: 80px; }
-.navigation-list{display: flex; margin: 50px; }
-.navegation{ margin: 30px;}
+.ventajas h3 {
+   color: var(--color2);
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 1.14;
+}
 
-.contact-section{display: flex; justify-content: space-between;margin: 10px;} 
-   .email{margin: 20px;}
-.tel{margin: 20px;}
+.ventajas p {
+   font-weight: 400;
+   font-size: 14px;
+   color: var(--color3);
+   line-height: 1.71;
+}
 
-.h1{width: 696px;height: 120;}
-.titulo{height: 600px; display: flex; justify-content: center; align-items: center; flex-direction: column;}
-.boton1{width: 261px; height: 50px;margin: 40px;}
-
-.encabezado {display: flex; justify-content: space-between;}
-.encabezado .p{display: flex; justify-content: center; align-items: center;justify-content: space-between;}
-.list-ventajas{margin-right: 30px;}
-.dedicamos{text-align: center;}
-
-.imagen{display: flex; align-items: center; justify-content: space-between;}
+.ventajas h3 {
+   list-style: none;
+}
 
 
-.asesores{display: flex; align-items:center; justify-content: space-between;}
-.equipo{text-align: center;}
+/*-----------------------------------------A que nos dedicamos--------------------------------------------*/
+.dedicamos h2 {
+   color: var(--color2);
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.16;
+   margin-bottom: 50px;
+}
 
-/*---------------flex box portafolio---------------*/
+.dedicamos {
+   padding: 0 0 94px 0;
+}
 
-.header-nav{display: flex; justify-content: center; align-items: center;height: 80px;}
-.menu{display: flex;justify-content: center;}
-.button-list{padding: 8px;}
-.proyect{display: flex;flex-wrap:wrap;justify-content: space-between;}
-.contacto-footer {padding: 0px;}
-.final {padding: 70px;}
+.imagen {
+   list-style: none;
+}
 
- .botton-menu{border-radius: 4px; padding: 6px 22px; border:none;background-color:#F5F4FA ;}
- .menu :hover{cursor: pointer; color:#FFFFFF;background-color: #2196F3;}
- .contact-section :hover{color:#2196F3;cursor: pointer;}
- 
- /*----------------Efectos y elementos icont contacnt-------------*/
+.dedicate {
+   position: relative;
+   width: 370px;
+   height: 294px;
+}
 
-.icon-contant{width: 16px;height: 12px;fill: var(--color3);margin-right: 10px;}
-
-.container :hover .icon-contant{fill: #2196F3;}
-
-.container-ventajas{width: 270px;height: 120px;background-color: #F5F4FA;padding: 25px 102.34px; margin-bottom: 30px; border-radius: 4px;border: 1px #AFB1B8 solid;}
-.icon-ventajas{width: 65.32px;height: 70px;}
-.container-ventajas:hover{border-color: #2196F3;}
-.container-ventajas:hover .icon-ventajas {fill:#2196F3;}
-/*.container-ventajas:hover{border-color: #2196F3;}
-.icon-ventajas:hover{fill:#2196F3
-   }*/
-
-
-      /*------------------------------Nuestro equipo-----------------------*/
-.our-tem{height: 44px ; display: flex; justify-content: space-around;padding: 0px 32px;}
-.our-icon> svg {
-   width: 20px; height: 20px; fill:#AFB1B8;}
-.our-icon{height: 44px;width: 44px; background-color:#FFFFFF; border-radius: 50%;padding: 12px;}
-.our-icon:hover{background-color: #2196F3;}
-.our-icon:hover .red {fill: #FFFFFF;}
-
-/*----------------hover-------------------*/
+.dedicate>h3 {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   padding: 27px 0;
+   bottom: 0;
+   font-size: 14px;
+   color: var(--color5);
+   background-color: rgba(47, 48, 58, 0.8);
+   width: 370px;
+   height: 70px;
+   ;
+}
 
 
+/*--------------------------- -------------------Nuetro equipo-------------------------------------------------*/
+.equipo {
+   background: #F5F4FA;
+   padding: 94px;
+}
 
-/*------------------footer---------------------------*/
-.container-footer{display: flex;
- gap: 70px;align-items: center;}
+.equipo h2 {
+   color: var(--color2);
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.16;
+   margin-bottom: 50px;
+}
 
-.social-midia{width: 20px;height: 20px; fill: #FFFFFF;}
+.asesores h3 {
+   color: var(--color2);
+   font-size: 16px;
+   line-height: 1.18;
+   font-weight: 500;
+   background-color: #FFFFFF;
+}
 
-.media-icons h3 {color:#FFFFFF}
-.icono-redes{display: inline-block;width: 44px;height: 44px;background-color: rgba(255, 255, 255, 0.1);border-radius: 50%;padding: 12px;}
+.asesores p {
+   color: var(--color3);
+   font-size: 16px;
+   line-height: 1.18;
+   font-weight: 400;
+}
 
-.icono-redes:hover  { background-color: #2196F3;}
+
+/*----------------------------------------------------pie de pagina---------------------------------------*/
+.final {
+   background-color: var(--color4);
+}
+
+.contacto .ubicacion {
+   color: var(--color5);
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+   line-height: 1.71;
+}
+
+.contacto .correo {
+   color: var(--color6);
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+   line-height: 1.71;
+}
+
+.contacto .telefono {
+   color: var(--color6);
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+   line-height: 1.71;
+}
+
+
+/*--------------------------------------------portafolio botones--------------------------------------------*/
+.portafolio {
+   padding: 94px 0;
+}
+
+.menu {
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.62;
+   color: var(--color5);
+   padding-bottom: 50px;
+}
+
+.proyect h3 {
+   color: var(--color2);
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 2;
+}
+
+.menu p {
+   font-size: 16;
+   font-weight: 400;
+   line-height: 1.87;
+   color: var(--color3);
+}
+
+.menu :hover {
+   color: var(--color3)
+}
+
+.cards:hover {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+/*----------------------------------------------------flex box index html------------------------------------*/
+.header-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+}
+
+.navigation-list {
+   display: flex;
+   margin: 50px;
+}
+
+.navegation {
+   margin: 30px;
+}
+
+.contact-section {
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+}
+
+.email {
+   margin: 20px;
+}
+
+.h1 {
+   width: 696px;
+   height: 120;
+}
+
+.titulo {
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.boton1 {
+   width: 261px;
+   height: 50px;
+   margin: 40px;
+}
+
+.encabezado {
+   display: flex;
+   justify-content: space-between;
+}
+
+.encabezado .p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.list-ventajas {
+   margin-right: 30px;
+}
+
+.dedicamos {
+   text-align: center;
+}
+
+.imagen {
+   display: flex;
+   /*align-items: center;*/
+   justify-content: space-between;
+}
+
+
+.asesores {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.equipo {
+   text-align: center;
+}
+
+/*-----------------------------------------------------flex box portafolio-----------------------------------*/
+
+.header-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+}
+
+.menu {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.button-list {
+   padding: 8px;
+}
+
+.proyect {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 27px;
+}
+
+.contacto-footer {
+   padding: 0px;
+}
+
+.final {
+   padding: 70px;
+}
+
+.botton-menu {
+   border-radius: 4px;
+   padding: 6px 24px;
+   border: none;
+   background-color: #F5F4FA;
+
+}
+
+.botton-menu:hover {
+   color: #FFFFFF;
+   background-color: #2196F3;
+   border-radius: 4px;
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12)
+}
 
 
 
-/*------------------------------logo icons------------------*/
+/*----------------------------------------Efectos y elementos icont contacnt---------------------------------*/
 
- .container-logos h3 {width: 323px;height: 36.98px;font-size: 36px;display: flex;color:#212121}
-.container-logos{display: flex;background-color: #E5E5E5;height: 335px;justify-content: center;align-items: center; flex-direction: column;}
-.logo-icon{display: flex;gap:30px;}
-.icono-company {width: 106px;height: 52.83px;fill:#AFB1B8;}
-.fondo1{fill:#2196F3;}
+.icon-contant {
+   width: 16px;
+   height: 12px;
+   fill: var(--color3);
+   margin-right: 10px;
+}
 
-.container-logos{gap:20px;}
-.rectangulo{border: 1px #AFB1B8 solid;
-   border-radius: 4px;width: 170px;height: 81px;padding: 14px 32px;}
+.email :hover {
+   color: #2196F3;
+}
 
-   .rectangulo:hover{border-color: #2196F3;}
-   .icono-company :hover{fill:#2196F3}
+.email :hover .icon-contant {
+   fill: #2196F3;
+}
 
+.container-ventajas {
+   width: 270px;
+   height: 120px;
+   background-color: #F5F4FA;
+   padding: 25px 102.34px;
+   margin-bottom: 30px;
+   border-radius: 4px;
+   border: ;
+}
+
+.icon-ventajas {
+   width: 65.32px;
+   height: 70px;
+}
+
+
+
+/*------------------------------------------------------Nuestro equipo----------------------------------*/
+.our-tem {
+   display: flex;
+   justify-content: space-around;
+   padding: 0px 32px 30px 32px
+}
+
+.our-icon>svg {
+   width: 20px;
+   height: 20px;
+   fill: #AFB1B8;
+}
+
+.our-icon {
+   height: 44px;
+   width: 44px;
+   background-color: #FFFFFF;
+   border-radius: 50%;
+   padding: 12px;
+}
+
+.nombre h3 {
+   margin: 30px 0px 10px 0px
+}
+
+.our-icon:hover {
+   background-color: #2196F3;
+}
+
+.our-icon:hover .red {
+   fill: #FFFFFF;
+}
+
+
+/*-----------------------------------------------------------footer------------------------------------------*/
+.container-footer {
+   display: flex;
+   gap: 70px;
+   align-items: center;
+}
+
+.social-midia {
+   width: 20px;
+   height: 20px;
+   fill: #FFFFFF;
+}
+
+.media-icons h3 {
+   color: #FFFFFF
+}
+
+.icono-redes {
+   display: inline-block;
+   width: 44px;
+   height: 44px;
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+   padding: 12px;
+}
+
+.icono-redes:hover {
+   background-color: #2196F3;
+}
+
+
+/*----------------------------------------------------logo icons---------------------------------------------*/
+
+.container-logos h3 {
+   width: 323px;
+   height: 36.98px;
+   font-size: 36px;
+   display: flex;
+   color: #212121
+}
+
+.container-logos {
+   display: flex;
+
+   height: 335px;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.logo-icon {
+   display: flex;
+   gap: 30px;
+}
+
+.icono-company {
+   width: 106px;
+   height: 52.83px;
+   fill: #AFB1B8;
+}
+
+.container-logos {
+   gap: 20px;
+}
+
+.rectangulo {
+   border: 1px #AFB1B8 solid;
+   border-radius: 4px;
+   width: 170px;
+   height: 81px;
+   padding: 14px 32px;
+}
+
+.rectangulo:hover {
+   border-color: #2196F3;
+}
+
+.rectangulo:hover .icono-company {
+   fill: #2196F3
+}
