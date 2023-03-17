@@ -55,6 +55,13 @@ a {
    font-size: 14px;
    line-height: 1.14;
    color: var(--color2);
+   height: 80px;
+   padding-top: 32px;
+}
+
+.link-actual {
+   border-bottom: solid var(--color1);
+   border-radius: 2px;
 }
 
 .navegation :hover {
@@ -425,7 +432,7 @@ a {
    padding: 25px 102.34px;
    margin-bottom: 30px;
    border-radius: 4px;
-   border: ;
+
 }
 
 .icon-ventajas {
@@ -442,7 +449,7 @@ a {
    padding: 0px 32px 30px 32px
 }
 
-.our-icon>svg {
+.red {
    width: 20px;
    height: 20px;
    fill: #AFB1B8;
@@ -548,4 +555,87 @@ a {
 
 .rectangulo:hover .icono-company {
    fill: #2196F3
+}
+
+
+/*----------------------------------------Animaciones portafolio-------------------------------------------*/
+
+
+.animation-2 {
+   position: absolute;
+   top: 0px;
+   height: 294px;
+   width: 370px;
+   background: rgba(33, 150, 243, 0.9);
+   padding: 63px 24px;
+   letter-spacing: 0.03cm;
+   color: #FFFFFF;
+   transform: translatey(105%);
+   transition: transform 250ms ease;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.card-image-2:hover .animation-2 {
+   transform: translatey(0%)
+}
+
+
+.card-image-2 {
+   position: relative;
+   overflow: hidden;
+
+}
+
+/*{
+   width: 528px;
+   height: 581px;
+   background: rgb(160, 160, 145);
+   margin-top: 221px;
+   left: 536px;
+   border-radius: 4px;
+   position: absolute;
+}*/
+
+.backdrop {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.modal {
+   position: fixed;
+   display: flex;
+   justify-content: right;
+   align-items: right;
+   width: 528px;
+   height: 581px;
+   background-color: #FFFFFF;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+}
+
+.boton-cerrar {
+   display: flex;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   margin: 8px;
+   background-color: #FFFFFF;
+
+}
+
+.is-hidden {
+   display: none;
 }
